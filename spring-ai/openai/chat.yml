@@ -1,0 +1,19 @@
+info:
+  name: chat
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/openai/chat?query=Hello, who are you?
+  params:
+    - name: query
+      value: Hello, who are you?
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
