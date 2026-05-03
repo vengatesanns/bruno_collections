@@ -1,0 +1,19 @@
+info:
+  name: Prompt1
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/prompt1?query=What are all the bikes available more than 350cc?
+  params:
+    - name: query
+      value: What are all the bikes available more than 350cc?
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

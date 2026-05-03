@@ -1,0 +1,7 @@
+info:
+  name: 9_ChatModel_vs_ChatClientAPI
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
