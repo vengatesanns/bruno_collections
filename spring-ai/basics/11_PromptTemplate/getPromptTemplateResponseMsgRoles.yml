@@ -1,0 +1,25 @@
+info:
+  name: getPromptTemplateResponseMsgRoles
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/prompttemplate/message-roles
+  body:
+    type: json
+    data: |-
+      {
+        
+        "customerName": "Vengat",
+        "orderId": 546446,
+        "product": "Watch",
+        "issue": "Watch is Keep on restarting and I want a replacement"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

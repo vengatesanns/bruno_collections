@@ -1,0 +1,25 @@
+info:
+  name: getPromptTemplateResponseWithCustomTemplateFile
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8080/prompttemplate/custom-template-file
+  body:
+    type: json
+    data: |-
+      {
+        
+        "customerName": "John",
+        "orderId": 23424,
+        "product": "Mobile",
+        "issue": "Mobile is Keep on restarting and I want a replacement"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

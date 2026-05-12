@@ -1,0 +1,25 @@
+info:
+  name: PromptTemplate
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/prompttemplate
+  body:
+    type: json
+    data: |-
+      {
+        
+        "customerName": "Karthik",
+        "orderId": 12345,
+        "product": "Mobile",
+        "issue": "Mobile is Keep on restarting and I want a replacement"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
