@@ -1,0 +1,7 @@
+info:
+  name: 12_Defaults
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

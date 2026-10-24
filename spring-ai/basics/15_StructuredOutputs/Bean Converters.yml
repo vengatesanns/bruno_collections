@@ -1,0 +1,19 @@
+info:
+  name: Bean Converters
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:8080/converters/bean-converter?query="List Tamil songs with genre and movies?"
+  params:
+    - name: query
+      value: '"List Tamil songs with genre and movies?"'
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

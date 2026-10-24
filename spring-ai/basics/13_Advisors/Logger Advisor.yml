@@ -1,0 +1,19 @@
+info:
+  name: Logger Advisor
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/chat-client/advisor/logger?query=can you list some hotels, fool?
+  params:
+    - name: query
+      value: can you list some hotels, fool?
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

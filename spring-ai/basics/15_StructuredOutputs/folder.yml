@@ -1,0 +1,7 @@
+info:
+  name: 15_StructuredOutputs
+  type: folder
+  seq: 7
+
+request:
+  auth: inherit

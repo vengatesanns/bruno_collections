@@ -1,0 +1,19 @@
+info:
+  name: Structured O/P
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/structured_op/get_songs_info?query="List Tamil songs with genre and movies?"
+  params:
+    - name: query
+      value: '"List Tamil songs with genre and movies?"'
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

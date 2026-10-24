@@ -1,0 +1,19 @@
+info:
+  name: System Defaults
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/chat-client/defaults/system?query=who are you?
+  params:
+    - name: query
+      value: who are you?
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
